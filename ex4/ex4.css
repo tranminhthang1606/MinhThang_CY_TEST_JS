@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    font-size: 25px;
+}
+.container_media {
+    max-width: 1600px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+   
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.controller_media {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    background: linear-gradient(180deg, rgba(8, 9, 13, 0) 0%, rgba(8, 9, 13, 0.9) 80.37%);
+    color: white;
+    padding: 0 40px;
+    transition: all 0.5s linear;
+}
+
+
+
+.desc_time {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.progressBar {
+    width: 100%;
+    background: rgba(217, 217, 217, 1);
+    height: 2px;
+    margin: 10px 0;
+    border-radius: 50%;
+    
+}
+.progressBar div{
+    width: 0;
+    background: rgba(255, 255, 255, 1);
+    height: 2px;
+}
+
+.interaction {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#centerPause{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 999px;
+    z-index: 1;
+    color: re;
+}
+
+.video_paused{
+    background-color: rgba(255, 255, 255, 0.3); /* Nền trắng trong suốt */
+    backdrop-filter: blur(10px); /* Mờ nền phía sau phần tử */
+}
+
+.left__interaction {
+    display: flex;
+}
+
+.right__interaction {
+    padding-right: 56px;
+    display: flex;
+    gap: 64px;
+}

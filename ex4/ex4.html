@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex4.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container_media">
+
+        <img id="centerPause" onclick="toggleVideo()" src="./assets/play.svg" alt="">
+        <video id="myVideo" width="640" height="360">
+            <source src="./assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="controller_media">
+            <div class="title">
+                World War 2
+            </div>
+            <div class="desc_time">
+
+                <div>Documentary</div>
+                <div id="timer"><span></span>  <span></span></div>
+            </div>
+            <div class="progressBar">
+                <div></div>
+            </div>
+
+            <div class="interaction">
+                <div class="left__interaction">
+                    <div id="togglePlay" onclick="toggleVideo()"><img src="./assets/play.svg" alt=""></div>
+                    <div id="rollback" onclick="rewindVideo()"><img src="./assets/rollback.svg" alt=""></div>
+                    <div id="next" onclick="fastForwardVideo()"><img src="./assets/next.svg" alt=""></div>
+                </div>
+                <div class="right__interaction">
+                    <div id="muteToggle" onclick="muteToggle()"><img src="./assets/volume.svg" alt=""></div>
+                    <div id="wider" onclick="fullScreen()"><img src="./assets/wider.svg" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./ex4.js"></script>
+</body>
+
+</html>
